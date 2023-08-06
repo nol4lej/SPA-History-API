@@ -1,3 +1,4 @@
+import { About } from "../views/About.js"
 import { Home } from "../views/Home.js"
 
 export const Router = () => {
@@ -11,11 +12,9 @@ export const Router = () => {
     }
 
     if(path === "/about"){
-        root.innerHTML = "Estoy en About"
+        root.innerHTML = About()
     }
 }
-
-
 
 const ManejadorBotones = () => {
     const botones = document.querySelectorAll("a[data-link]")
@@ -31,3 +30,6 @@ const ManejadorBotones = () => {
     })
 }
 ManejadorBotones()
+
+// Evento que se dispara cuando el usuario navega hacia atrás o hacia adelante en el historial del navegador.
+window.addEventListener("popstate", Router)
