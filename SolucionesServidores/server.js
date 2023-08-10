@@ -2,10 +2,11 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const publicPath = path.join(__dirname, '/'); // Ruta a la carpeta de archivos estáticos
+const publicPath = path.join(__dirname, '../'); // Ruta a la carpeta de archivos estáticos
 
 app.use(express.static(publicPath));
 
+// redireccionamiento de las rutas
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
