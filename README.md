@@ -4,7 +4,7 @@ Documentacion: [https://developer.mozilla.org/en-US/docs/Web/API/History_API](ht
 
 # Soluciones de rutas desde el servidor
 
-Las siguientes soluciones corresponden al error de obtención de rutas (Cannot GET /{ruta}) al recargar nuestra página web. 
+Las siguientes soluciones corresponden al error de obtención de rutas `(Cannot GET /{ruta})` al recargar nuestra página web. 
 
 ## Solución con Express (NodeJS):
 
